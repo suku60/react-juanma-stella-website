@@ -1,0 +1,20 @@
+.box_basic_view {
+    background-color: var(--color-5);
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.svg_name {
+    fill: red;
+}
+
+/* 400PX WIDTH SCREEN ADAPTIVE MEDIA */
+@media screen and (max-width: 400px) {
+
+
+}
