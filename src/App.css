@@ -1,9 +1,21 @@
 .App {
   text-align: center;
 
-  overflow: hidden;
-}
+  
+  overflow: scroll;
 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  overflow-y: scroll; 
+
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
 
 /* MOBILE MEDIA SCREENS */
 /* 400PX WIDTH SCREEN ADAPTIVE MEDIA */
