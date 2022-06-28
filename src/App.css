@@ -1,14 +1,10 @@
 .App {
   text-align: center;
 
-  
-  overflow: scroll;
-
   -ms-overflow-style: none;
   scrollbar-width: none;
 
   overflow-y: scroll; 
-
   
   display: flex;
   flex-direction: column;
