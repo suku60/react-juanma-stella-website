@@ -32,6 +32,11 @@
 
     width: 50%;
     height: 100%;
+
+    background-size: contain;
+    background-position: center;
+    background-image: url("../assets/img/myphotonobg.png");
+    background-repeat: no-repeat;
 }
 
 .personal_data_name {
@@ -46,7 +51,7 @@
 }
 
 .personal_data_name_section {
-    background-color: rgba(0, 128, 0, 0.26);
+    /* background-color: rgba(0, 128, 0, 0.26); */
 
     width: 100%;
 
@@ -81,9 +86,107 @@
     align-items: flex-end;
 }
 
+.box_social_network_icons {
+    background-color: red;
+    height: 100%;
 
-/* 400PX WIDTH SCREEN ADAPTIVE MEDIA */
-@media screen and (max-width: 400px) {
+    overflow: hidden;
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-evenly;
+
+    padding-inline: 3rem;
+}
+
+/* SECOND SECTION: SKILLS */
+
+.main_section_skills {
+    background-color: rgba(47, 0, 255, 0.308);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills_wakatime_data {
+    background-color: rgba(0, 255, 136, 0.295);
+    
+    height: 27%;
+    width: 100%;
+
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills_chart {
+    background-color: rgba(0, 255, 213, 0.253);  
+
+    height: 73%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skills_chart_languages {
+    background-color: rgba(21, 255, 0, 0.432); 
+    
+    height: 100%;
+    width: 24%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding-inline: 1rem;
+
+    justify-content: space-evenly;
+}
+
+.chart_languages {
+    background-color: rgba(0, 255, 213, 0.253);  
+    
+}
+
+.skills_chart_bars {
+    background-color: rgba(255, 0, 212, 0.24); 
+    
+    height: 100%;
+    width: 76%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: space-evenly;
+}
+
+.chart_bar {
+    background-color: rgba(128, 128, 128, 0.715);
+
+    height: 1rem;
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+}
+
+.chart_bar_inside {
+    height: 100%;
+    width: 50%;
+
+    background-color: red;
 
 }
