@@ -6,6 +6,11 @@ import SectionSkills from '../Components/SectionSkills/SectionSkills';
 import SectionPersonalData from '../Components/SectionPersonalData/SectionPersonalData';
 import SectionMyStack from '../Components/SectionMyStack/SectionMyStack';
 
+import {ReactComponent as DotsSvg} from '../assets/svg/dots.svg';
+import SectionMyProjects from '../Components/SectionMyProjects/SectionMyProjects';
+import SectionAbout from '../Components/SectionAbout/SectionAbout';
+import SectionContact from '../Components/SectionContact/SectionContact';
+
 
 const BasicView = () => {
 
@@ -14,9 +19,9 @@ const BasicView = () => {
            <SectionPersonalData/>
            <SectionSkills/>
            <SectionMyStack/>
-           <div className="size_main_section">hello</div>
-           <div className="size_main_section">hello</div>
-           <div className="size_main_section">hello</div>
+           <SectionMyProjects/>
+           <SectionAbout/>
+           <SectionContact/>
          </div>
          )
 }

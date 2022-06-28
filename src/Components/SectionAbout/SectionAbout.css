@@ -1,0 +1,28 @@
+
+/* FIFTH SECTION: ABOUT */
+.main_section_about {
+	background-color: #0000ffbb;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.about_title {
+	background-color: #0000ffbb;
+	
+	height: 24%;
+	width: 100%;
+}
+
+.about_content {
+	background-color: #0000ffbb;
+	
+	height: 76%;
+	width: 100%;
+
+	padding-inline: 1.5rem;
+	
+}

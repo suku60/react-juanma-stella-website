@@ -1,0 +1,11 @@
+
+/* SIXTH SECTION: CONTACT */
+.main_section_contact {
+    background-color: #00c3ff71;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

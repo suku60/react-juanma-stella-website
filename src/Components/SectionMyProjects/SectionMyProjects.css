@@ -1,0 +1,55 @@
+
+/* FOURTH SECTION: PROJECTS */
+
+.main_section_projects {
+	background-color: rgba(0, 128, 0, 0.322);
+
+	height: 100%;
+	width: 100%;
+}
+
+.projects_title {
+	background-color: rgba(0, 228, 0, 0.322);
+
+	height: 24%;
+	width: 100%;
+}
+
+.projects_data {
+	background-color: rgba(0, 18, 0, 0.322);
+
+	height: 76%;
+	width: 100%;
+
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.projects_data_item {
+	background-color: rgba(0, 18, 0, 0.322);
+
+	height: 80%;
+	width: 20%;
+
+	margin-inline: .2rem;
+	cursor: pointer;
+}
+.projects_data_more_info:hover,
+.projects_data_item:hover {
+	background-color: rgba(0, 180, 0, 0.922);
+}
+
+.projects_data_more_info {
+	background-color: rgba(0, 18, 0, 0.322);
+
+	height: 39%;
+	width: 10%;
+
+	border-radius: 50%;
+
+	margin-left: 2rem;
+	cursor: pointer;
+}
