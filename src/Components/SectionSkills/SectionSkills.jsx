@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './SectionSkills.css';
 
-import axios from 'axios';
+import {connect} from 'react-redux';
 
 const SectionSkills = () => {
 
@@ -51,4 +51,7 @@ return (
   </div> 
   )
 }
-export default SectionSkills;
+
+export default connect((state) => ({
+  infoDisplay: state.infoDisplay
+}))(SectionSkills);

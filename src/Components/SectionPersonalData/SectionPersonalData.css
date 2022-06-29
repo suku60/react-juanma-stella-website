@@ -84,3 +84,28 @@
 
     padding-inline: 3rem;
 }
+
+.sn_link {
+    cursor: pointer;
+
+    height: 100%;
+    transition: .5s;
+
+}
+
+.sn_link:hover {
+    transform: scale(2);
+    transition: .5s;
+}
+
+.links_data_indicator {
+    background-color: blue;
+
+    position: absolute;
+
+    height: 30vh;
+
+    width: 100%;
+
+    transition: .5s;
+}

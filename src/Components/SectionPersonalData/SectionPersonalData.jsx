@@ -12,28 +12,67 @@ import {ReactComponent as DotsSvg} from '../../assets/svg/dots.svg';
 
 const SectionPersonalData = () => {
 
+  const [linkDataDisplay, setLinkDataDisplay] = useState({
+    backgroundColor: "transparent",
+    color: "transparent",
+    display: "none"
+  })
+  const [isLinkDataDisplay, setIsLinkDataDisplay] = useState(false);
+
+  useEffect(() => {
+  }, []);
+
+  useEffect(() => {
+    if(isLinkDataDisplay){
+      setLinkDataDisplay({
+        backgroundColor: "blue",
+        color: "blue",
+        display: "flex"
+      })
+    }else{
+      setLinkDataDisplay({
+        backgroundColor: "transparent",
+        color: "transparent",
+        display: "none"
+      })
+    }
+  }
+  ,[isLinkDataDisplay])
+
 return (
   <div className="size_main_section main_section_personal_data">
-             <div className="personal_data_photo">
-             </div>
-             <div className="personal_data_name">
-              <div className="personal_data_name_section empty"></div>
-              <div className="personal_data_name_section box_name">
-                <div className="container_name">
-                  <Name/>
-                </div>
-                <div className="container_surname">
-                  <Surname/>
-                </div>
-              </div>
-              <div className="personal_data_name_section box_social_network_icons">
-                <GithubSvg/>
-                <LinkedinSvg/>
-                <DotsSvg/>
-              </div>
-              
-             </div> 
-           </div> 
+    <div className="personal_data_photo">
+    </div>
+    <div className="personal_data_name">
+      <div className="personal_data_name_section empty"></div>
+      <div className="personal_data_name_section box_name">
+        <div className="container_name">
+          <Name/>
+        </div>
+        <div className="container_surname">
+          <Surname/>
+        </div>
+      </div>
+      <div className="personal_data_name_section box_social_network_icons">
+        <a className='sn_link centered_content' href='https://github.com/suku60' target="_blank">
+          <GithubSvg/>
+        </a>
+        <a className='sn_link centered_content' href='https://www.linkedin.com/in/juanma-stella/' target="_blank">
+          <LinkedinSvg/>
+        </a>
+        {/* HIDDEN DOTS FOR FUTURE ADDITIONS */}
+        {/* <div className='sn_link centered_content link_dots' 
+        onClick={()=>setIsLinkDataDisplay(true)}
+        >
+          <DotsSvg/>
+        </div> */}
+      </div>
+    </div>
+    <div className="links_data_indicator" 
+    style={linkDataDisplay}
+    onMouseLeave={() => {setIsLinkDataDisplay(false)}}
+    ></div>
+  </div> 
   )
 }
 export default SectionPersonalData;

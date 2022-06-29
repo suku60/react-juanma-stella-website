@@ -1,48 +1,29 @@
 import React, {useEffect, useState} from 'react';
 import './StackHex.css';
 
-const StackHex = ({
-  iconUrl = '',
-  title = ''
-  }) => {
+import {connect} from 'react-redux';
+import { INFOLOG } from '../../redux/types';
 
-  const [stackIndicatorDisplay, setStackIndicatorDisplay] = useState({
-    backgroundColor: "transparent",
-	  color: "transparent"
-  });
-
-  const [isStackInfoDisplayed, setIsStackInfoDisplayed] = useState(false);
-
-  useEffect(() => {
-  },[]);
-
-  useEffect(() => {
-
-    if (isStackInfoDisplayed) {
-      setStackIndicatorDisplay({
-        backgroundColor: "rgba(0,0,0,0.5)",
-        color: "white"
-      });
-    }
-    else {
-      setStackIndicatorDisplay({
-        backgroundColor: "transparent",
-        color: "transparent"
-      });
-    }
-    
-  },[isStackInfoDisplayed]);
+const StackHex = (props) => {
 
 
 return (
-        <li className="hex">
-          <div className="hex_content"          
-          onMouseOver={() =>setIsStackInfoDisplayed(true)}
-          onMouseLeave={() =>setIsStackInfoDisplayed(false)}>
-            <img src={iconUrl} alt={title} />
-            <h2>{title}</h2>
+        <li className="hex"
+        onMouseOver={()=>{
+          props.dispatch({ type: INFOLOG, payload: true });
+          console.log("working?")
+        }}
+        onMouseLeave={()=>{
+          props.dispatch({ type: INFOLOG, payload: false });
+          console.log("working?")
+        }}>
+          <div className="hex_content">
+            <img src={props.iconUrl} alt={props.title} />
+            <h2>{props.title}</h2>
           </div>
         </li>
   )
 }
-export default StackHex;
+export default connect((state) => ({
+  infoDisplay: state.isStackInfoDisplayed
+}))(StackHex);

@@ -3,8 +3,7 @@
 
 .main_section_projects {
 	background-color: rgba(0, 128, 0, 0.322);
-
-	height: 100%;
+	
 	width: 100%;
 }
 
@@ -31,8 +30,8 @@
 .projects_data_item {
 	background-color: rgba(0, 18, 0, 0.322);
 
-	height: 60%;
-	width: 22%;
+	height: 22vh;
+	width: 22vh;
 
 	margin-inline: .9rem;
 	cursor: pointer;
