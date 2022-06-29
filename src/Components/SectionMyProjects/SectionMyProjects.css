@@ -11,14 +11,14 @@
 .projects_title {
 	background-color: rgba(0, 228, 0, 0.322);
 
-	height: 24%;
+	height: 20%;
 	width: 100%;
 }
 
 .projects_data {
 	background-color: rgba(0, 18, 0, 0.322);
 
-	height: 76%;
+	height: 80%;
 	width: 100%;
 
 	
@@ -31,10 +31,10 @@
 .projects_data_item {
 	background-color: rgba(0, 18, 0, 0.322);
 
-	height: 80%;
-	width: 20%;
+	height: 60%;
+	width: 22%;
 
-	margin-inline: .2rem;
+	margin-inline: .9rem;
 	cursor: pointer;
 }
 .projects_data_more_info:hover,
@@ -45,8 +45,8 @@
 .projects_data_more_info {
 	background-color: rgba(0, 18, 0, 0.322);
 
-	height: 39%;
-	width: 10%;
+	height: 10vh;
+	width: 10vh;
 
 	border-radius: 50%;
 

@@ -9,3 +9,18 @@
     align-items: center;
 
 }
+
+.contact_title {
+    background-color: rgba(0, 255, 255, 0.349);
+
+    width: 100%;
+    height: 20%;
+
+}
+
+.contact_data {
+    background-color: rgba(102, 51, 153, 0.384);
+
+    width: 100%;
+    height: 80%;
+}

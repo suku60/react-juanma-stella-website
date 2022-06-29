@@ -12,55 +12,47 @@ const SectionMyStack = () => {
   const myStackData = [
     {
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title',
-      description: 'Some sample text about the article this hexagon leads to',
+      title: 'This is a title'
     },
     {
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title',
-      description: 'Some sample text about the article this hexagon leads to',
+      title: 'This is a title'
     },
     {
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title',
-      description: 'Some sample text about the article this hexagon leads to',
+      title: 'This is a title'
     }
     ,{
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title',
-      description: 'Some sample text about the article this hexagon leads to',
+      title: 'This is a title'
     }
     ,{
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title',
-      description: 'Some sample text about the article this hexagon leads to',
+      title: 'This is a title'
     }
     ,{
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title',
-      description: 'Some sample text about the article this hexagon leads to',
+      title: 'This is a title'
     }
     ,{
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title',
-      description: 'Some sample text about the article this hexagon leads to',
+      title: 'This is a title'
     }
     ,{
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title',
-      description: 'Some sample text about the article this hexagon leads to',
+      title: 'This is a title'
     }
     ,{
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title',
-      description: 'Some sample text about the article this hexagon leads to',
+      title: 'This is a title'
     }
 
   ]
 
 return (
   <div className="size_main_section main_section_my_stack">
-    <div className="my_stack_title centered_content">
+    <div className="my_stack_title centered_content"
+    >
       <p> my stack </p>
     </div>
     <div className="my_stack_hexagon">
@@ -68,7 +60,9 @@ return (
         {
           myStackData.map((item, index) => {
             return (
-              <StackHex key={index} {...item} />
+              <StackHex key={index}
+              {...item}
+              />
             )})
         }
       </ul>

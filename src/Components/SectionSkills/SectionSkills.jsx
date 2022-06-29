@@ -18,16 +18,16 @@ return (
          <p>html</p>
        </div>
        <div className="chart_languages">
-         <p>html</p>
+         <p>css</p>
        </div>
        <div className="chart_languages">
-         <p>html</p>
+         <p>javascript</p>
        </div>
        <div className="chart_languages">
-         <p>html</p>
+         <p>php</p>
        </div>
        <div className="chart_languages">
-         <p>html</p>
+         <p>python</p>
        </div>
       </div>
       <div className="skills_chart_bars">

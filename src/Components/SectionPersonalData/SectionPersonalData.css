@@ -1,7 +1,7 @@
 /* FIRST SECTION: PERSONAL_DATA */
 
 .main_section_personal_data {
-    background-color: #00ffff67;
+    background-color: #00ffff93;
     
     display: flex;
     flex-direction: row;
@@ -11,7 +11,7 @@
 }
 
 .personal_data_photo {
-    background-color: rgba(255, 0, 0, 0.274);
+    background-color: rgba(0, 0, 0, 0.993);
 
     width: 50%;
     height: 100%;
@@ -20,6 +20,7 @@
     background-position: center;
     background-image: url("../../assets/img/myphotonobg.png");
     background-repeat: no-repeat;
+    background-blend-mode: luminosity;
 }
 
 .personal_data_name {
@@ -52,7 +53,7 @@
 .container_name {
     width: 100%;
 
-    padding-inline: 3rem;
+    padding-inline: 8rem;
     
     display: flex;
     flex-direction: column;
@@ -62,7 +63,7 @@
 .container_surname {
     width: 100%;
 
-    padding-inline: 3rem;
+    padding-inline: 8rem;
     
     display: flex;
     flex-direction: column;

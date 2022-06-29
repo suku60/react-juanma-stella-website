@@ -3,16 +3,44 @@ import './StackHex.css';
 
 const StackHex = ({
   iconUrl = '',
-  title = '',
-  description = '',
-}) => {
+  title = ''
+  }) => {
+
+  const [stackIndicatorDisplay, setStackIndicatorDisplay] = useState({
+    backgroundColor: "transparent",
+	  color: "transparent"
+  });
+
+  const [isStackInfoDisplayed, setIsStackInfoDisplayed] = useState(false);
+
+  useEffect(() => {
+  },[]);
+
+  useEffect(() => {
+
+    if (isStackInfoDisplayed) {
+      setStackIndicatorDisplay({
+        backgroundColor: "rgba(0,0,0,0.5)",
+        color: "white"
+      });
+    }
+    else {
+      setStackIndicatorDisplay({
+        backgroundColor: "transparent",
+        color: "transparent"
+      });
+    }
+    
+  },[isStackInfoDisplayed]);
+
 
 return (
         <li className="hex">
-          <div className="hex_content">
+          <div className="hex_content"          
+          onMouseOver={() =>setIsStackInfoDisplayed(true)}
+          onMouseLeave={() =>setIsStackInfoDisplayed(false)}>
             <img src={iconUrl} alt={title} />
             <h2>{title}</h2>
-            <p>{description}</p>
           </div>
         </li>
   )

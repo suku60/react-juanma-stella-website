@@ -22,6 +22,7 @@ const BasicView = () => {
            <SectionMyProjects/>
            <SectionAbout/>
            <SectionContact/>
+           <div>footer here</div>
          </div>
          )
 }
