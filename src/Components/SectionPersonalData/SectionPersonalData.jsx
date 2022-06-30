@@ -7,6 +7,9 @@ import Surname from '../Surname/Surname';
 
 import {ReactComponent as GithubSvg} from '../../assets/svg/github.svg';
 import {ReactComponent as LinkedinSvg} from '../../assets/svg/linkedin.svg';
+import {ReactComponent as TwitterSvg} from '../../assets/svg/twitter.svg';
+import {ReactComponent as BehanceSvg} from '../../assets/svg/behance.svg';
+import {ReactComponent as WhatsappSvg} from '../../assets/svg/whatsapp.svg';
 import {ReactComponent as DotsSvg} from '../../assets/svg/dots.svg';
 
 
@@ -59,6 +62,15 @@ return (
         </a>
         <a className='sn_link centered_content' href='https://www.linkedin.com/in/juanma-stella/' target="_blank">
           <LinkedinSvg/>
+        </a>
+        <a className='sn_link centered_content' href='https://twitter.com/suku60_dev' target="_blank">
+          <TwitterSvg/>
+        </a>
+        <a className='sn_link centered_content' href='https://www.behance.net/westellart' target="_blank">
+          <BehanceSvg/>
+        </a>
+        <a className='sn_link centered_content' href='https://wa.me/34649325992' target="_blank">
+          <WhatsappSvg/>
         </a>
         {/* HIDDEN DOTS FOR FUTURE ADDITIONS */}
         {/* <div className='sn_link centered_content link_dots' 

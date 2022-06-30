@@ -71,7 +71,7 @@
 }
 
 .box_social_network_icons {
-    background-color: red;
+    background-color: #FFFFFF;
     height: 100%;
 
     overflow: hidden;
@@ -89,13 +89,21 @@
     cursor: pointer;
 
     height: 100%;
+    max-width: 5%;
     transition: .5s;
+
+    fill: black;
+    color: black;
 
 }
 
 .sn_link:hover {
     transform: scale(2);
     transition: .5s;
+}
+
+.sn_link svg {
+    height:40%;
 }
 
 .links_data_indicator {
