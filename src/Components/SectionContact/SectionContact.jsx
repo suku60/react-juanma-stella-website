@@ -28,6 +28,8 @@ const SectionContact = () => {
         display: "none"
       })
     }else{
+      setTimeout(() => {
+
         setDisplayContactData({
           height: "0%",
           display: "none"
@@ -36,6 +38,8 @@ const SectionContact = () => {
           height: "100%",
           display: "flex"
         })
+
+      }, 2000);
       }
 
   }
