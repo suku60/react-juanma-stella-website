@@ -12,43 +12,44 @@ const SectionMyStack = (props) => {
 
   const myStackData = [
     {
-      iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
+      // iconUrl: "../../assets/img/tecnologies/react.png",
       title: 'React',
+      titleLowercase: 'react',
       description: 'React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.'
     },
     {
-      iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
       title: 'Node',
+      titleLowercase: 'node',
       description: 'Node.js is a JavaScript runtime built on Chrome\'s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive applications that run across distributed devices.'
     },
     {
-      iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
       title: 'Sass',
+      titleLowercase: 'sass',
       description: 'Sass is a stable, mature, and powerful professional grade CSS extension language.'
     }
     ,{
-      iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
       title: 'Bootstraps',
+      titleLowercase: 'bootstraps',
       description: 'Bootstrap is a free and open-source front-end framework for designing websites and web applications.'
     }
     ,{
-      iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
       title: 'Git',
+      titleLowercase: 'git',
       description: 'Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.'
     }
     ,{
-      iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
       title: 'AWS',
+      titleLowercase: 'aws',
       description: 'Amazon Web Services (AWS) is a suite of cloud computing services that makes it easy to build, deploy, and manage applications and infrastructure.'
     }
     ,{
-      iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
       title: 'MySQL',
+      titleLowercase: 'mysql',
       description: 'MySQL is a relational database management system (RDBMS) that is used to store and manage data.'
     }
     ,{
-      iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
       title: 'Photoshop',
+      titleLowercase: 'photoshop',
       description: 'Photoshop is a free software application used to create, edit, and manipulate images.'
     }
   ]
@@ -72,7 +73,7 @@ const SectionMyStack = (props) => {
         backgroundColor: "rgba(0,0,0,0.5)",
         color: "white",
         width: "30%",
-        transition: "1s"
+        transition: ".1s"
       });
     }else{
 
@@ -81,7 +82,7 @@ const SectionMyStack = (props) => {
           backgroundColor: "rgba(0,0,0,0.5)",
           color: "white",
           width: "30%",
-          transition: "1s"
+          transition: ".2ss"
         });
       }else{
 
@@ -90,7 +91,7 @@ const SectionMyStack = (props) => {
           color: "transparent",
           height: "0%",
           transform: "translateY(-100%)",
-          transition: "1s"
+          transition: ".1s"
         });
       }
     }
@@ -113,6 +114,7 @@ return (
               <StackHex key={index}
               iconUrl={item.iconUrl}
               title={item.title}
+              titleLowercase={item.titleLowercase}
               description={item.description}
               />
             )})

@@ -8,7 +8,7 @@ const SectionMyProjects = () => {
   const [carouselDisplay, setCarouselDisplay] = useState({
     backgroundColor: "transparemt",
     background: "none",
-    transition: "1s",
+    transition: ".2s",
     opacity: "0",
     width: "0%"
     
@@ -19,7 +19,7 @@ const SectionMyProjects = () => {
       setCarouselDisplay({
         backgroundColor: "red",
         background: "linear-gradient(to right, #f6f6f6, #f6f6f6)",       
-        transition: "1s",
+        transition: ".4s",
         opacity: "1",
         width: "100%"
       });
@@ -27,7 +27,7 @@ const SectionMyProjects = () => {
       setCarouselDisplay({
         backgroundColor: "transparemt",
         background: "none",
-        transition: "1s",
+        transition: ".2s",
         opacity: "0",
         width: "0"
 

@@ -2,20 +2,20 @@
 /* FOURTH SECTION: PROJECTS */
 
 .main_section_projects {
-	background-color: rgba(0, 128, 0, 0.322);
+	/* background-color: rgba(0, 128, 0, 0.322); */
 	
 	width: 100%;
 }
 
 .projects_title {
-	background-color: rgba(0, 228, 0, 0.322);
+	/* background-color: rgba(0, 228, 0, 0.322); */
 
 	height: 20%;
 	width: 100%;
 }
 
 .projects_data {
-	background-color: rgba(0, 18, 0, 0.322);
+	/* background-color: rgba(0, 18, 0, 0.322); */
 
 	height: 80%;
 	width: 100%;
@@ -33,7 +33,7 @@
 }
 
 .projects_data_item {
-	background-color: rgba(0, 18, 0, 0.322);
+	/* background-color: rgba(0, 18, 0, 0.322); */
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -92,11 +92,12 @@
 
 .projects_data_more_info:hover,
 .projects_data_item:hover {
-	background-color: gray
+	background-color: var(--color-red-1);
+	transition: .2s
 }
 
 .projects_data_more_info {
-	background-color: rgba(0, 18, 0, 0.322);
+	/* background-color: rgba(0, 18, 0, 0.322); */
 
 	height: 10vh;
 	width: 10vh;
@@ -105,6 +106,7 @@
 
 	margin-left: 2rem;
 	cursor: pointer;
+	transition: .1s;
 }
 
 /* BANNER WITH ALL OF MY PROJECTS WHICH IS HIDDEN */

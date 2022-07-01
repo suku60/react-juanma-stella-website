@@ -1,7 +1,8 @@
 /* FIRST SECTION: PERSONAL_DATA */
 
 .main_section_personal_data {
-    background-color: #00ffff93;
+    background-color: #FFFFFF;
+
     
     display: flex;
     flex-direction: row;
@@ -11,7 +12,8 @@
 }
 
 .personal_data_photo {
-    background-color: rgba(0, 0, 0, 0.993);
+    /* background-color: rgba(0, 0, 0, 0.993); */
+    margin-top: 2rem;
 
     width: 50%;
     height: 100%;
@@ -24,7 +26,7 @@
 }
 
 .personal_data_name {
-    background-color: rgba(0, 0, 255, 0.26);
+    /* background-color: rgba(0, 0, 255, 0.26); */
 
     width: 50%;
     height: 100%;
@@ -42,7 +44,7 @@
 }
 
 .box_name {
-    background-color: rgba(128, 128, 128, 0.295);
+    /* background-color: rgba(128, 128, 128, 0.295); */
 
     display: flex;
     flex-direction: column;
@@ -71,7 +73,6 @@
 }
 
 .box_social_network_icons {
-    background-color: #FFFFFF;
     height: 100%;
 
     overflow: hidden;
@@ -90,7 +91,7 @@
 
     height: 100%;
     max-width: 5%;
-    transition: .5s;
+    transition: .1s;
 
     fill: black;
     color: black;
@@ -98,8 +99,9 @@
 }
 
 .sn_link:hover {
-    transform: scale(2);
-    transition: .5s;
+    /* transform: scale(1.05); */
+    fill: var(--color-blue-1);
+    transition: .2s;
 }
 
 .sn_link svg {
@@ -107,7 +109,7 @@
 }
 
 .links_data_indicator {
-    background-color: blue;
+    background-color: var(--color-blue-1);
 
     position: absolute;
 
@@ -115,5 +117,5 @@
 
     width: 100%;
 
-    transition: .5s;
+    transition: .2s;
 }

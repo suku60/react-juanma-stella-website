@@ -1,7 +1,7 @@
 
 /* FIFTH SECTION: ABOUT */
 .main_section_about {
-	background-color: #0000ffbb;
+	/* background-color: #0000ffbb; */
 	
 	display: flex;
 	flex-direction: column;
@@ -11,14 +11,14 @@
 }
 
 .about_title {
-	background-color: #00ff374b;
+	/* background-color: #00ff374b; */
 	
 	height: 26%;
 	width: 100%;
 }
 
 .about_content {
-	background-color: #0000ffbb;
+	/* background-color: #0000ffbb; */
 	
 	height: 74%;
 	width: 100%;

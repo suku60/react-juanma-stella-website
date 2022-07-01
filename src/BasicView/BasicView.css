@@ -1,9 +1,9 @@
 .box_basic_view {
-	background-color: var(--color-5);
+	background-color: #FFFFFF;
 
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: 16rem 21rem 45rem 23rem 19rem 10rem 7rem;
+	grid-template-rows: 17rem 21rem 45rem 23rem 19rem 10rem 7rem;
 
 
 

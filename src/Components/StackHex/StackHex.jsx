@@ -27,7 +27,9 @@ return (
         }}
         key={props.key}>
           <div className="hex_content">
-            <img src={props.iconUrl} alt={props.title} />
+            <img 
+            className={`image_${props.titleLowercase}`}
+            alt={props.title} />
             <h2>{props.title}</h2>
           </div>
         </li>

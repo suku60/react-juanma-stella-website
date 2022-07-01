@@ -51,6 +51,49 @@
 	
 	/* border: .08rem solid black; */
 	margin: 0 auto;
+
+	/* background-image: url("../../assets/img/tecnologies/aws.png"); */
+	background-position: 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	/* background-color: rgba(0, 0, 0, 0.315); */
+
+}
+
+.hex img::before {
+	color: transparent;
+}
+
+.image_react {
+	background-image: url("../../assets/img/tecnologies/react.png");
+}
+
+.image_aws {
+	background-image: url("../../assets/img/tecnologies/aws.png");
+}
+
+.image_photoshop {
+	background-image: url("../../assets/img/tecnologies/photoshop.png");
+}
+
+.image_sass {
+	background-image: url("../../assets/img/tecnologies/sass.png");
+}
+
+.image_node {
+	background-image: url("../../assets/img/tecnologies/node.png");
+}
+
+.image_bootstraps {
+	background-image: url("../../assets/img/tecnologies/bootstraps.png");
+}
+
+.image_mysql {
+	background-image: url("../../assets/img/tecnologies/mysql.png");
+}
+
+.image_git {
+	background-image: url("../../assets/img/tecnologies/git.png");
 }
 
 .hex h2 {
@@ -126,8 +169,8 @@
 
 
 /* HOVERS */
-
+/* 
 .hex_content:hover h2,
 .hex_content:focus h2 {
 	transform: translateY(50%);
-}
+} */

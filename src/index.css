@@ -4,20 +4,18 @@
 /* ROOTING MAIN COLORS */
 :root {
 
-  --color-1-transparent: hsl(17, 40%, 19%, .9);
-  --color-1: #44281d; 	
+  
+  --color-blue-1: #8386f5;
+  --color-blue-2: #3d43b4;
+  --color-blue-3: #041348;
 
-	--color-2-transparent: hsl(20, 63%, 71%, .9); 	
-	--color-2: #e4a788; 	
-	
-  --color-3-transparent: hsl(55, 85%, 62%, .9); 	
-  --color-3: #f0e14a; 	
-	
-  --color-4-transparent: hsl(85, 57%, 55%, .9); 	
-  --color-4: #97ce4c; 	
-	
-  --color-5-transparent: hsl(325, 63%, 76%, .9);
-  --color-5: #e89ac7;
+  --color-green-1: #1afe49;
+  --color-green-2: #083e12;
+
+  --color-red-1: #de004e;
+  --color-red-2: #860029;
+
+  --color-violet-1: #f887ff;
   
 }
 
