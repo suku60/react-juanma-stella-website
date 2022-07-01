@@ -11,6 +11,11 @@
   justify-content: flex-start;
   align-items: center;
 
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-size: 110px 110px;
+  background-image:  repeating-linear-gradient(0deg, #000000, #000000 .08rem, #e5e5f7 .08rem, #e5e5f7);
+
 }
 
 /* MOBILE MEDIA SCREENS */

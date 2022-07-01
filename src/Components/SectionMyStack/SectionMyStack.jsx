@@ -13,41 +13,44 @@ const SectionMyStack = (props) => {
   const myStackData = [
     {
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title'
+      title: 'React',
+      description: 'React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.'
     },
     {
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title'
+      title: 'Node',
+      description: 'Node.js is a JavaScript runtime built on Chrome\'s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive applications that run across distributed devices.'
     },
     {
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title'
+      title: 'Sass',
+      description: 'Sass is a stable, mature, and powerful professional grade CSS extension language.'
     }
     ,{
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title'
+      title: 'Bootstraps',
+      description: 'Bootstrap is a free and open-source front-end framework for designing websites and web applications.'
     }
     ,{
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title'
+      title: 'Git',
+      description: 'Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.'
     }
     ,{
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title'
+      title: 'AWS',
+      description: 'Amazon Web Services (AWS) is a suite of cloud computing services that makes it easy to build, deploy, and manage applications and infrastructure.'
     }
     ,{
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title'
+      title: 'MySQL',
+      description: 'MySQL is a relational database management system (RDBMS) that is used to store and manage data.'
     }
     ,{
       iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title'
+      title: 'Photoshop',
+      description: 'Photoshop is a free software application used to create, edit, and manipulate images.'
     }
-    ,{
-      iconUrl: 'https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg',
-      title: 'This is a title'
-    }
-
   ]
 
   const [stackIndicatorDisplay, setStackIndicatorDisplay] = useState({
@@ -68,7 +71,6 @@ const SectionMyStack = (props) => {
       setStackIndicatorDisplay({
         backgroundColor: "rgba(0,0,0,0.5)",
         color: "white",
-        animation: "animIndicator 1s normal",
         width: "30%",
         transition: "1s"
       });
@@ -78,7 +80,6 @@ const SectionMyStack = (props) => {
         setStackIndicatorDisplay({
           backgroundColor: "rgba(0,0,0,0.5)",
           color: "white",
-          animation: "animIndicator 1s normal",
           width: "30%",
           transition: "1s"
         });
@@ -89,7 +90,6 @@ const SectionMyStack = (props) => {
           color: "transparent",
           height: "0%",
           transform: "translateY(-100%)",
-          animation: "opacity 2s ease-out",
           transition: "1s"
         });
       }
@@ -113,6 +113,7 @@ return (
               <StackHex key={index}
               iconUrl={item.iconUrl}
               title={item.title}
+              description={item.description}
               />
             )})
         }
@@ -122,7 +123,15 @@ return (
     style={stackIndicatorDisplay}
     onMouseOver={() => {setIsUserOnIndicator(true)}}
     onMouseLeave={() => {setIsUserOnIndicator(false)}}
-    ></div>
+    >
+      <div className="my_stack_indicator_title">
+        <p>{props?.infoDisplay?.stackInfo?.title}</p>
+      </div>
+      <div className="my_stack_indicator_description">
+        <p>{props?.infoDisplay?.stackInfo?.description}</p>
+      </div>  
+    </div>
+    
   </div> 
   )
 }
