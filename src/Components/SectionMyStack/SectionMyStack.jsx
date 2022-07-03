@@ -60,8 +60,9 @@ const SectionMyStack = (props) => {
     backgroundColor: "transparent",
     color: "transparent",
     height: "0%",
-    transform: "translateY(-110%)",
-    animation: "opacity 2s ease-out"
+    display: "none",
+    transform: "translateY(-200%)",
+    animation: "opacity 5s ease-out"
   });
 
   const [isUserOnIndicator, setIsUserOnIndicator] = useState(false);
@@ -74,8 +75,10 @@ const SectionMyStack = (props) => {
       setStackIndicatorDisplay({
         backgroundColor: "rgba(0,0,0,0.5)",
         color: "white",
+        height: "100vh",
+        display: "flex",
         width: "30%",
-        transition: ".1s"
+        transition: ".5s"
       });
     }else{
 
@@ -83,8 +86,10 @@ const SectionMyStack = (props) => {
         setStackIndicatorDisplay({
           backgroundColor: "rgba(0,0,0,0.5)",
           color: "white",
+          height: "100vh",
+          display: "flex",
           width: "30%",
-          transition: ".2ss"
+          transition: ".5s"
         });
       }else{
 
@@ -92,8 +97,9 @@ const SectionMyStack = (props) => {
           backgroundColor: "transparent",
           color: "transparent",
           height: "0%",
+          display: "none",
           transform: "translateY(-100%)",
-          transition: ".1s"
+          transition: ".5s"
         });
       }
     }
