@@ -1,7 +1,7 @@
 /* FIRST SECTION: PERSONAL_DATA */
 
 .main_section_personal_data {
-    background-color: #FFFFFF;
+    background-color: #010101;
 
     
     display: flex;
@@ -17,6 +17,8 @@
 
     width: 50%;
     height: 100%;
+
+    /* border-radius: 10rem; */
 
     background-size: contain;
     background-position: center;
@@ -93,14 +95,14 @@
     max-width: 5%;
     transition: .1s;
 
-    fill: black;
+    fill: #ffffff;
     color: black;
 
 }
 
 .sn_link:hover {
     /* transform: scale(1.05); */
-    fill: var(--color-blue-1);
+    fill: var(--color-green-1);
     transition: .2s;
 }
 
@@ -118,4 +120,44 @@
     width: 100%;
 
     transition: .2s;
+
+}
+
+#animSvg {
+
+    fill: var(--color-green-1);
+
+    animation: svgPath 2s ease-in-out,
+    svgFill 2s ease-in-out;
+
+    stroke: var(--color-green-1);
+    stroke-dasharray: 100 0;
+
+}
+
+@keyframes svgPath {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+    100% {
+        stroke-dasharray: 100 0;
+    }
+}
+    
+@keyframes svgFill {
+    0% {
+        fill: transparent
+    }
+    10% {
+        fill: var(--color-red-1);
+    }
+    50% {
+        fill: var(--color-red-2);
+    }
+    80% {
+        fill: var(--color-green-2);
+    }
+    100% {
+        fill: var(--color-green-1);
+    }
 }

@@ -58,7 +58,7 @@ const SectionMyStack = (props) => {
     backgroundColor: "transparent",
     color: "transparent",
     height: "0%",
-    transform: "translateY(-100%)",
+    transform: "translateY(-110%)",
     animation: "opacity 2s ease-out"
   });
 

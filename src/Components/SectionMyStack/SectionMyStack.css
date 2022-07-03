@@ -1,8 +1,8 @@
 
 /* THIRD SECTION: MY STACK */
 .main_section_my_stack {
-	background-color: var(--color-red-1);
-
+	background-color: #010101;
+	color: #ffffff;
 
 	display: flex;
 	flex-direction: column;
@@ -87,7 +87,7 @@
 
 @keyframes animIndicator {
 	0% {
-		transform: translateY(-100%);
+		transform: translateY(-110%);
 	}
 	100% {
 		transform: translateY(0%);

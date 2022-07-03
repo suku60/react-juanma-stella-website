@@ -12,9 +12,6 @@
   align-items: center;
 
   background-color: #e5e5f7;
-  opacity: 1;
-  background-size: 110px 110px;
-  background-image:  repeating-linear-gradient(0deg, var(--color-blue-3), var(--color-blue-3) .08rem, whitesmoke .08rem, whitesmoke);
 
 }
 
