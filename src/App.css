@@ -15,9 +15,71 @@
 
 }
 
-/* MOBILE MEDIA SCREENS */
-/* 400PX WIDTH SCREEN ADAPTIVE MEDIA */
-@media screen and (max-width: 400px) {
+#animSvg {
 
+  fill: var(--color-green-1);
 
+  animation: svgPath 2s ease-in-out,
+  svgFill 2s ease-in-out;
+
+  stroke: var(--color-green-1);
+  stroke-dasharray: 100 0;
+
+}
+
+#animTitleSvg {
+
+  animation: svgPath 2s ease-in-out,
+  svgFill 2s ease-in-out,
+  strokeFill 1s normal;
+
+  stroke: rgba(255, 255, 255, 0.438);
+  stroke-dasharray: 100 0;
+
+}
+
+@keyframes svgPath {
+  0% {
+      stroke-dasharray: 0 100;
+  }
+  100% {
+      stroke-dasharray: 100 0;
+  }
+}
+  
+@keyframes svgFill {
+  0% {
+      fill: transparent
+  }
+  10% {
+      fill: var(--color-red-1);
+  }
+  50% {
+      fill: var(--color-red-2);
+  }
+  80% {
+      fill: var(--color-green-2);
+  }
+  100% {
+      fill: var(--color-green-1);
+  }
+}
+
+@keyframes strokeFill {
+  0% {
+      stroke: transparent
+  }
+  10% {
+      stroke: var(--color-red-1);
+  }
+  50% {
+      stroke: var(--color-red-2);
+  }
+  80% {
+      stroke: var(--color-green-2);
+  }
+  100% {
+      stroke: transparent;
+  }
+  
 }

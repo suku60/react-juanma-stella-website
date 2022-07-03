@@ -10,6 +10,7 @@ import {ReactComponent as DotsSvg} from '../../assets/svg/dots.svg';
 
 import {ReactComponent as NameSvg} from '../../assets/svg/JuanmaSvg.svg';
 import {ReactComponent as SurnameSvg} from '../../assets/svg/StellaSvg.svg';
+import {ReactComponent as FullStackSvg} from '../../assets/svg/FullstackSvg.svg';
 
 
 const SectionPersonalData = () => {
@@ -53,6 +54,9 @@ return (
         </div>
         <div className="container_surname">
           <SurnameSvg id="animSvg"/>
+        </div>
+        <div className="container_title">
+          <FullStackSvg className="fullstack_title" id="animTitleSvg"/>
         </div>
       </div>
       <div className="personal_data_name_section box_social_network_icons">

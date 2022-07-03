@@ -85,6 +85,11 @@
 	z-index: 12;
 }
 
+/* SVG */
+.my_stack_title_svg {
+	fill: whitesmoke;
+}
+
 @keyframes animIndicator {
 	0% {
 		transform: translateY(-110%);

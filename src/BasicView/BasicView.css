@@ -3,7 +3,7 @@
 
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: 17rem 21rem 45rem 23rem 19rem 10rem 7rem;
+	grid-template-rows: 18rem 23rem 45rem 23rem 19rem 10rem 7rem;
 
 	transition: .3s;
 

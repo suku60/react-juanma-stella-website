@@ -5,6 +5,8 @@ import StackHex from '../StackHex/StackHex';
 
 import {connect} from 'react-redux';
 
+import {ReactComponent as MyStackTitleSvg} from '../../assets/svg/mystackTitle.svg';
+
 const SectionMyStack = (props) => {
 
   // the data of 9 of the tecnologies i know. 
@@ -104,7 +106,7 @@ return (
   <div className="size_main_section main_section_my_stack">
     <div className="my_stack_title centered_content"
     >
-      <p> my stack </p>
+      <MyStackTitleSvg className="my_stack_title_svg" id="animTitleSvg"/>
     </div>
     <div className="my_stack_hexagon">
       <ul className="hexagon_grid">
