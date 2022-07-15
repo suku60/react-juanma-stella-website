@@ -38,22 +38,142 @@
 	background-position: center;
 	background-size: cover;
 
-	height: 22vh;
-	width: 22vh;
+	height: 20vh;
+	width: 20vh;
 
 	margin-inline: .9rem;
 	cursor: pointer;
 
 	overflow: hidden;
 
-	border-radius: 10rem;
+	border-radius: 4rem;
 
-	transition: .5s;
+	transition: .3s;
 	
 }
 .projects_data_item:hover {
-	background-size: contain;
+	border: .1rem solid var(--color-green-1);
+	transition: .3s;
 }
+
+
+.projects_data_more_info:hover,
+.projects_data_item:hover {
+	border: .1rem solid var(--color-green-1);
+
+	background-color: transparent;
+	transition: .1s
+}
+
+.projects_data_more_info {
+
+	color: #ffffff;
+
+	height: 7vh;
+	width: 7vh;
+
+	border-radius: 50%;
+
+	margin-left: 2rem;
+	cursor: pointer;
+	transition: .1s;
+}
+
+.carousel_item_card p {
+	font-size: 1rem;
+
+}
+
+.project_name {
+	color: #ffffff;
+
+	/* font-size: .5em; */
+	/* text-shadow: #ffffff; */
+	background-color: hsl(0, 0%, 100%, .1);
+
+	padding: .2rem;
+
+	width: 90%;
+
+	border-radius: .2rem;
+	
+	text-transform: uppercase;
+	transition: .3s;
+}
+
+.project_description {
+	color: #ffffff ;
+
+	text-align: center;
+	padding: .3rem;
+}
+
+a {
+	color: var(--color-red-2);
+	text-decoration:none;
+
+	font-size: .9rem;
+	transition: .3s;
+
+	margin-right: 50%;
+}
+
+.deploy_link {
+
+	transform: scale(.8);
+
+	fill: var(--color-green-1);
+
+	text-align: end;
+	transition: .2s;
+
+}
+
+.deploy_link:hover {
+
+	transform: rotate(-40deg) scale(.8);
+	transition: .2s;
+}
+
+/* BANNER WITH ALL OF MY PROJECTS WHICH IS HIDDEN */
+.projects_carousel {
+	background-color: #010101;
+
+	border-top: .2rem solid var(--color-red-2);
+	border-bottom: .2rem solid var(--color-red-2);
+
+	position: absolute;
+	top: 20%;
+	left: 0;
+
+
+	height: 40%;
+	width: 97%;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.carousel_item_card {
+	background-color: transparent;
+
+	height: 100%;
+	width: 12%;
+
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	padding-block: 1rem;
+
+}
+
 
 /* SINGLE CARDS BACKGROUND */
 .project_tomeme {
@@ -90,52 +210,25 @@
 
 }
 
-.projects_data_more_info:hover,
-.projects_data_item:hover {
-	background-color: var(--color-red-1);
-	transition: .2s
+#animMoreBtn {
+	animation: bgGradient 5s linear infinite;
 }
 
-.projects_data_more_info {
-	/* background-color: rgba(0, 18, 0, 0.322); */
-
-	height: 10vh;
-	width: 10vh;
-
-	border-radius: 50%;
-
-	margin-left: 2rem;
-	cursor: pointer;
-	transition: .1s;
-}
-
-/* BANNER WITH ALL OF MY PROJECTS WHICH IS HIDDEN */
-.projects_carousel {
-	background-color: rgba(245, 245, 245, 0.712);
-
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	height: 40%;
-	width: 97%;
+@keyframes bgGradient {
+	0% {
+		background-color: var(--color-red-2);
+	}
+	20% {
+		background-color: var(--color-green-1);
+	}
+	50% {
+		background-color: var(--color-red-1);
+	}
+	80% {
+		background-color: var(--color-green-1);
+	}
+	100% {
+		background-color: var(--color-red-2);
+	}
 	
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-
-
-}
-
-.carousel_item_card {
-	height: 100%;
-	width: 12%;
-
-	
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
 }

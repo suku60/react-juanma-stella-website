@@ -7,7 +7,6 @@ import {ReactComponent as TwitterSvg} from '../../assets/svg/twitter.svg';
 import {ReactComponent as BehanceSvg} from '../../assets/svg/behance.svg';
 import {ReactComponent as WhatsappSvg} from '../../assets/svg/whatsapp.svg';
 import {ReactComponent as DotsSvg} from '../../assets/svg/dots.svg';
-
 import {ReactComponent as NameSvg} from '../../assets/svg/JuanmaSvg.svg';
 import {ReactComponent as SurnameSvg} from '../../assets/svg/StellaSvg.svg';
 import {ReactComponent as FullStackSvg} from '../../assets/svg/FullstackSvg.svg';

@@ -29,8 +29,10 @@ return (
           <div className="hex_content">
             <img 
             className={`image_${props.titleLowercase}`}
-            alt={props.title} />
-            <h2>{props.title}</h2>
+            // title={props.title}
+            alt={props.title} 
+            />
+            {/* <h2>{props.title}</h2> */}
           </div>
         </li>
   )

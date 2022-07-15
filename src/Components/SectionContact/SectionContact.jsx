@@ -4,6 +4,8 @@ import './SectionContact.css';
 import {ReactComponent as LinkedinSvg} from '../../assets/svg/linkedin.svg';
 import {ReactComponent as WhatsappSvg} from '../../assets/svg/whatsapp.svg';
 
+import {ReactComponent as ContactTitleSvg} from '../../assets/svg/contactTitle.svg';
+
 const SectionContact = () => { 
 
   const [displayContactData, setDisplayContactData] = useState({
@@ -51,7 +53,7 @@ return (
     style={displayContactTitle}
     onMouseOver={()=>changeContactDisplay(true)}
     >
-      <p>contact</p>
+      <ContactTitleSvg className="my_stack_title_svg" id="animTitleSvg"/>
     </div>
     <div className="contact_data"
     style={displayContactData}
