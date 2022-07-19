@@ -27,6 +27,19 @@
 
 }
 
+#animSvg2 {
+
+  fill: var(--color-green-1);
+  
+  animation: svgPath 2s ease-in-out,
+  svgFill 2s ease-in-out;
+
+  stroke: var(--color-green-1);
+  stroke-dasharray: 100 0;
+
+
+}
+
 #animTitleSvg {
 
   animation: svgPath 2s ease-in-out,
@@ -42,6 +55,21 @@
   0% {
       stroke-dasharray: 0 100;
   }
+  30% {
+    stroke-dasharray: 10 30;
+  }
+  80% {
+      stroke-dasharray: 30 40;
+  }
+  86% {
+      stroke-dasharray: 50 30;
+  }
+  90% {
+    stroke-dasharray: 30 50;
+  }
+  95% {
+      stroke-dasharray: 90 10;
+  }
   100% {
       stroke-dasharray: 100 0;
   }
@@ -51,7 +79,7 @@
   0% {
       fill: transparent
   }
-  10% {
+  0% {
       fill: var(--color-red-1);
   }
   50% {

@@ -24,8 +24,8 @@ const BasicView = () => {
              <p>website currently under construction</p>
            </div>
            <div className="frontpage centered_content">
-             <NameSvg className="frontpage_text" id="animSvg"/>
-             <SurnameSvg className="frontpage_text" id="animSvg"/>
+             <NameSvg className="frontpage_text" id="animSvg2"/>
+             <SurnameSvg className="frontpage_text" id="animSvg2"/>
            </div>
            <SectionPersonalData/>
            <SectionSkills/>

@@ -14,6 +14,8 @@
 	height: 100%;
 }
 
+
+/* TEMPORARY */
 .disclaimer {
 	background-color: hsl(0, 80%, 40%);
 	
@@ -55,4 +57,12 @@
 .frontpage_text {
 	height: 5em;
 	transform: scale(2);
+} 
+
+@media screen and (max-width: 500px) {
+	.frontpage_text {
+		transform: scale(1);
+		margin-block: -1em;
+	} 
+
 }
