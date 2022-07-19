@@ -1,10 +1,10 @@
 import './App.css';
-import BasicView from './BasicView/BasicView';
+import TemporaryView from './Containers/TemporaryView/TemporaryView';
 
 function App() {
   return (
     <div className="App size_full_screen centered_content">
-      <BasicView/>
+      <TemporaryView/>
     </div>
   );
 }
