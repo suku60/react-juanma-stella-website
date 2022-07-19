@@ -11,6 +11,8 @@ import {ReactComponent as LinkedinSvg} from '../../assets/svg/linkedin.svg';
 import {ReactComponent as TwitterSvg} from '../../assets/svg/twitter.svg';
 import {ReactComponent as BehanceSvg} from '../../assets/svg/behance.svg';
 import {ReactComponent as WhatsappSvg} from '../../assets/svg/whatsapp.svg';
+import {ReactComponent as FigmaSvg} from '../../assets/svg/figmadetails.svg';
+import {ReactComponent as FigmaNameSvg} from '../../assets/svg/figmaname.svg';
 
 const TemporaryView = () => {
 
@@ -20,8 +22,13 @@ const TemporaryView = () => {
              <p>website currently under construction</p>
            </div>
            <div className="frontpage centered_content">
-             <NameSvg className="frontpage_text" id="animSvg2"/>
-             <SurnameSvg className="frontpage_text" id="animSvg2"/>
+             {/* <NameSvg className="frontpage_text" id="animSvg2"/>
+             <SurnameSvg className="frontpage_text" id="animSvg2"/> */}
+             <div className="figma_details centered_content" id="animSvg2">
+              <FigmaNameSvg className='figma_name_svg'id="animSvg3"/>
+              <FigmaSvg/>
+             </div>
+      
            </div>
            <div className="temporary_contact">
         <a className='sn_link centered_content' href='https://github.com/suku60' target="_blank">
