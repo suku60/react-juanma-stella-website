@@ -88,28 +88,6 @@
     padding-inline: 3rem;
 }
 
-.sn_link {
-    cursor: pointer;
-
-    height: 100%;
-    max-width: 5%;
-    transition: .1s;
-
-    fill: #ffffff;
-    color: black;
-
-}
-
-.sn_link:hover {
-    /* transform: scale(1.05); */
-    fill: var(--color-green-1);
-    transition: .2s;
-}
-
-.sn_link svg {
-    height:40%;
-}
-
 .links_data_indicator {
     background-color: var(--color-blue-1);
 

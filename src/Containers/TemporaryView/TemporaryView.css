@@ -86,24 +86,25 @@
 
 .figma_details svg {
 	fill: transparent;
-
+	position: fixed;
 	overflow: hidden;
 }
 
 .figma_name_svg {
 	position: fixed;
-	fill: transparent;
+	fill: var(--color-red-0-2);
+
 }
 .sn_link {
     cursor: pointer;
 
-    max-width: 5%;
+    max-width: 6%;
     transition: .1s;
 
     fill: #ffffff;
     color: black;
 
-    height: 3rem;
+    height: 5rem;
 
 }
 

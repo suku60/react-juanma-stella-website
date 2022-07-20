@@ -13,7 +13,8 @@
   --color-green-1: #1afe49;
   --color-green-2: #083e12;
 
-  --color-red-0: hsl(339, 100%, 44%, .8);
+  --color-red-0-2: hsl(339, 100%, 44%, .2);
+  --color-red-0-8: hsl(339, 100%, 44%, .8);
   --color-red-1: #de004e;
   --color-red-2: #860029;
   --color-red-3: hsl(342, 100%, 16%);
