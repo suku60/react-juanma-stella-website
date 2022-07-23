@@ -46,9 +46,9 @@ const TemporaryView = () => {
         <a className='sn_link centered_content' href='https://wa.me/34649325992' target="_blank">
           <WhatsappSvg/>
         </a>
-        <a href='../../assets/files/CV-JMSTELLA-JUL22-SPA.pdf' className='sn_link centered_content' alt="download my cv" download>         
+        {/* <a href='../../assets/files/CV-JMSTELLA-JUL22-SPA.pdf' className='sn_link centered_content' alt="download my cv" download>         
          <CvSvg/>
-        </a>
+        </a> */}
         {/* HIDDEN DOTS FOR FUTURE ADDITIONS */}
         {/* <div className='sn_link centered_content link_dots' 
         onClick={()=>setIsLinkDataDisplay(true)}
