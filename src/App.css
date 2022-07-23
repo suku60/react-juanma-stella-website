@@ -73,6 +73,11 @@
 
 }
 
+#animOpenUp {
+  animation: OpenUp 5s linear normal;
+}
+
+
 @keyframes svgPath {
   0% {
       stroke-dasharray: 0 100;
@@ -143,6 +148,19 @@
   }
   100% {
       stroke: transparent;
+  }
+  
+}
+
+@keyframes OpenUp {
+  0% {
+    transform: scaleY(0);
+  }
+  98% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
   }
   
 }

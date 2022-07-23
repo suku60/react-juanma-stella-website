@@ -18,7 +18,7 @@ const TemporaryView = () => {
 
   return (
     <Fragment>
-        <div className="disclaimer">
+        <div className="disclaimer" id="animOpenUp">
              <p>website currently under construction</p>
            </div>
            <div className="frontpage centered_content">
@@ -30,7 +30,7 @@ const TemporaryView = () => {
              </div>
       
            </div>
-           <div className="temporary_contact">
+           <div className="temporary_contact" id="animOpenUp">
         <a className='sn_link centered_content' href='https://github.com/suku60' target="_blank">
           <GithubSvg/>
         </a>
